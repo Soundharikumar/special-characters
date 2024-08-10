@@ -1,0 +1,10 @@
+def contains_special_characters(s):
+    for char in s:
+        if not (('a' <= char <= 'z') or ('A' <= char <= 'Z') or ('0' <= char <= '9') or char in (' ', '\t', '\n')):
+            return True
+    return False
+s = "Hello, World!"
+if contains_special_characters(s):
+    print("true")
+else:
+    print("false")
